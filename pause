@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "=> Pausing all connections"
+echo "set maxconn frontend default_frontend 0" | socat stdio /var/run/haproxy.stats

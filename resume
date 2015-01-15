@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "=> Resuming all connections"
+echo "set maxconn frontend default_frontend 10000" | socat stdio /var/run/haproxy.stats
